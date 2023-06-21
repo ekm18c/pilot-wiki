@@ -1,19 +1,300 @@
-body { padding-top: 56px; }
-.left-aligned { margin-left: auto; }
-.bg-dark { background-color: #343a40 !important; }
-.bg-hero { background-color: #45b06cff; }
+@keyframes movingGradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
 
-/* CALLOUT */
-.bd-callout { padding:1.25rem; margin-top:1.25rem; margin-bottom:1.25rem; border:1px solid #e9ecef; border-left-width:.25rem; border-radius:.25rem }
-.bd-callout h4 { margin-bottom:.25rem }
-.bd-callout p:last-child { margin-bottom:0 }
-.bd-callout code { border-radius:.25rem }
-.bd-callout+.bd-callout { margin-top:-.25rem }
-.bd-callout-info { border-left-color:#5bc0de }
-.bd-callout-warning { border-left-color:#f0ad4e }
-.bd-callout-danger { border-left-color:#d9534f }
+@keyframes gradientMove {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+@keyframes glowingText {
+  0% {
+    text-shadow: 0 0 10px rgb(61, 171, 83);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(178, 76, 149, 0.7), 0 0 30px rgb(207, 237, 11);
+  }
+  100% {
+    text-shadow: 0 0 10px rgb(0, 179, 255);
+  }
+}
 
-/* footer */
-footer a { color: white; font-weight: bold; text-decoration: none; }
-footer a:hover { color: white; text-decoration: underline; }
+body {
+  animation: movingGradient 3s linear infinite alternate;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "futura", sans-serif;
+  background-image: linear-gradient(to right,#F0D2D1, #B3E1E6,#F6EFA6,rgb(142, 177, 157));
+  background-size: 200% 200%;
+}
 
+/*  background-image: linear-gradient(to right,#ff0800, blue);*/
+
+#splash{
+  background-image: url('https://gifdb.com/images/high/just-keep-swimming-animated-school-of-fish-6yy94igqkvkqhet3.webp');
+  opacity: 0.75;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* option 1 #splash h1{
+  font-size: 5em;
+  text-align: center;
+	font-size: 90px;
+  color: black; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+   -webkit-text-stroke: .1px  #E2E3E2;
+
+}*/
+
+ #splash h1{
+  font-size: 5em;
+  text-align: center;
+	font-size: 90px;
+  color: rgb(0, 0, 0); 
+  text-shadow: 0 0 10px rgba(60, 156, 67,1); /* Add a initial glow effect */
+  animation: glowingText 2s ease-in-out infinite; 
+  font-family: 'Audiowide', sans-serif;
+
+}
+
+#content h2{
+  text-align: center;
+  font-size: 2em;
+  padding: 0px;
+  font-family: 'Oswald', sans-serif;
+}
+
+/*#splash h1{
+  font-size: 5em;
+  text-align: center;
+	font-size: 90px;
+  z-index: 1;
+  background-image: linear-gradient(to right,  rgb(36, 174, 168), blue);
+  background-clip: text; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text
+  animation: gradientMove 5s infinite linear;
+  text-outline: 2px solid #000;
+
+}*/
+
+#content {
+  margin: 0 auto;
+  padding:0px;
+}
+
+
+.navbar {
+  background-color: rgba(142, 177, 157, 0.5);
+  border-radius: 2px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end; 
+  padding-left: 20px;
+}
+
+.yellow{
+  background-color: #F6EFA6;
+  margin: 0;
+  
+}
+
+.pink{
+  background-color: #F0D2D1;
+  margin: 0;
+}
+
+.navbar a {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  -webkit-text-stroke: .1px  #E2E3E2;
+	text-shadow: 0px 2px 4px rgb(38, 124, 38);
+  font-size: 17px;
+  padding: 10px;
+  padding-right: 110px;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  position: relative;
+  z-index: 1;
+   
+}
+
+.navbar a:hover {
+  color: #ffffff;
+  font-size: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 0px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  text-shadow: 0 0 10px rgba(60, 156, 67,1); /* Add a initial glow effect */
+  animation: glowingText 2s ease-in-out infinite; 
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover > a {
+  background-color: transparent;
+}
+
+
+
+/* the rest of this is the footer css*/
+.footer {
+  background-color: var(--dark) !important;
+  color: var(--white);
+  font-family: 'Oswald', sans-serif;
+  padding-bottom: 50px;
+  padding-top: 30px;
+}
+.footer p {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.footer .footer-details {
+  position: relative;
+}
+
+.footer .footer-details .logo-footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer .logo-footer {
+  display: flex;
+  justify-content: center;
+  height: 50%;
+}
+
+.footer .logo-footer h4 {
+  text-align: center;
+}
+.footer .footer-details .logo-footer p {
+  padding-left: 40px;
+  padding-bottom: 0;
+  padding-top: 30px;
+  margin:0px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.footer .footer-details .sponsors > div {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+  .footer .footer-details .sponsors > div {
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+  }
+}
+
+.footer .footer-details .sponsors > div a {
+  display: inline-block;
+  padding: 10px;
+}
+
+.footer .footer-details .sponsors > div a img {
+  transition: all 250ms ease;
+  height: 70px;
+  align-items: right;
+  position: relative;
+}
+
+.footer .footer-details .sponsors > div a img.neb {
+  height: 40px;
+}
+
+.footer .creds {
+  margin-top: 30px;
+}
+
+.footer .creds .copy .small {
+  text-align: center !important;
+  font-size: 12px;
+}
+
+@media (min-width: 992px) {
+  .footer .creds .copy .small {
+    text-align: left !important;
+  }
+}
+
+.footer .creds .copy .small a {
+  border-bottom: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.footer .creds .copy .small a:hover {
+  color: var(--main-light);
+  border-bottom: 1px solid var(--main-light);
+}
+
+.footer .creds .socials {
+  position: relative;
+}
+
+.footer .creds .socials > div {
+  text-align: center;
+  margin-bottom: 20px;
+  height: 20px;
+}
+
+.footer .creds .socials > div img{
+  text-align: center;
+  margin-bottom: 20px;
+  max-height: 30px;
+  max-width: 30px;
+  align-items: center;
+}
+@media (min-width: 992px) {
+  .footer .creds .socials > div {
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+  }
+}
+
+.footer .creds .socials > div a {
+  display: inline-block;
+}
