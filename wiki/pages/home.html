@@ -1,82 +1,9 @@
+{% extends "layout.html" %}
+
+{% block title %}Fishy Go Bye Bye{% endblock %}
 {% block lead %}<b>Welcome to iGEM 2023!</b> Your team has been approved and you are ready to start the iGEM season!{% endblock %}
 
 {% block page_content %}
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="generator" content="GitLab Pages">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Oswald&display=swap" rel="stylesheet">
-
-    <title>iGEM TMAU</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="navbar">
-      <a href="https://pages.gitlab.io/plain-html/">Project</a>
-      <div class="dropdown">
-        <a href="...">Wet Lab</a>
-        <div class="dropdown-content">
-          <a href="...">Engineering</a>
-          <a href="...">Experiments</a>
-          <a href="...">Results</a>
-          <a href="...">Proof of Concept</a>
-          <a href="...">Parts</a>
-          <a href="...">Safety</a>
-          <a href="...">Notebook</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <a href="...">Dry Lab</a>
-        <div class="dropdown-content">
-          <a href="...">Model</a>
-          <a href="...">Hardware</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <a href="...">Human Practices</a>
-        <div class="dropdown-content">
-          <a href="...">Integrated Human Practices</a>
-          <a href="...">Education</a>
-          <a href="...">Communication</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <a>Team</a>
-        <div class="dropdown-content">
-          <a href="team.html">Members</a>
-          <a href="...">Collaborations</a>
-          <a href="...">Attributions</a>
-        </div>
-      </div>
-    </div>
-    
-    <br><br>
-    <div id = "splash">
-     
-      <h1>TMAU Pill</h1>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    </div>
-    <div id="content">
-      <h2>This is the slogan for the product</h2>
-        <br><br><br><br><br><br><br><br><br><br><br>
-       
-      
-        
-      <div class = "yellow">
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <p>Hello this is some content</p>
-        <br>
-      </div>
-      <div class = "pink">
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      </div>
-    
-
-    
 
 <div class="row">
   <div class="col">
@@ -88,8 +15,6 @@
     <ul>
       <li><a href="https://competition.igem.org/deliverables/team-wiki" target="_blank">Wiki Requirements page</a></li>
       <li><a href="https://competition.igem.org/judging/pages-for-awards" target="_blank">Standard URL Pages for Awards</a></li>
-    </ul>
-  </div>
 </div>
 <div class="row mt-4">
   <div class="col">
@@ -132,55 +57,5 @@
     </ul>
   </div>
 </div>
-  </body>
-  <footer class="footer">
-    <div class="container">
-      <div class="row footer-details">
-        <div class="col-sm-6 logo-footer">
-          <h4>Thank You to Our Supporters</h4>
-          <br><br><br><br><br><br><br><br><br><br><br>
-        </div>
-        <div class="col-sm-6 sponsors">
-          <div>
-            <a href="https://provost.fsu.edu/"><img alt="FSU Office of the Provost" class="sponsor_img" src="/tmau/public/images/fsu-office-provost-v-removebg-preview.png"></a>
-		
-            <a href="https://www.research.fsu.edu/"><img alt="FSU Office of Research" class="sponsor_img" src="/tmau/public/images/fsu-office-research-v-removebg-preview.png" ></a>
-		
-            <a href="https://cre.fsu.edu/"><img alt="FSU Center for Undergraduate Research and Academic Engagement" class="sponsor_img" src="/tmau/public/images/t-fsu-cre-removebg-preview.png"></a>
-	 
-            <a href="https://artsandsciences.fsu.edu/"><img alt="FSU College of Arts & Sciences" class="sponsor_img" src="/tmau/public/images/fsu-college-arts-sciences-v-removebg-preview.png"></a>
-		
-            <a href="https://eng.famu.fsu.edu/"><img alt="FSU/FAMU College of Engineering" class="sponsor_img" src="/tmau/public/images/famu-fsu-college-engineering-v-removebg-preview.png" ></a>
-		
-            <a href="https://jimmorancollege.fsu.edu/"><img alt="FSU College of Entrepreneurship" class="sponsor_img" src="/tmau/public/images/img-9507-removebg-preview.png"></a>
-            
-            <a href="https://business.fsu.edu/"><img alt="FSU College of Business" class="sponsor_img" src="/tmau/public/images/florida-state-university-college-of-business-vector-logo-removebg-preview.png"></a>
-            
-            <a href="https://biorender.com/"><img alt="Biorender" class="sponsor_img" src="https://static.igem.wiki/teams/4475/wiki/sponsor-logos/sponsor-logos/bio-render.png" ></a>
-		
-            <a href="https://med.fsu.edu/"><img alt="FSU College of Medicine" class="sponsor_img" src="https://static.igem.wiki/teams/4475/wiki/sponsor-logos/sponsor-logos/t-fsu-medicine.png"></a>
-	  
-          </div>
-        </div>
-      </div>
-
-      <hr>
-      <br>
-
-      <div class="row creds">
-        <div class="col-lg-4 socials order-lg-last">
-          <div>
-          <a href="https://www.instagram.com/fsuigem/?hl=en" class="ms-3"><img src="/tmau/public/images/images-removebg-preview.png" alt="Follow us on Instagram" style="padding-top:10px" align-item="justify"/></a>
-          <a href="https://www.youtube.com/channel/UCvDN1yvnncF-WJL0koONTBw" class="ms-3"><img src="/tmau/public/images/unnamed-removebg-preview.png" alt="Follow us on Instagram" /></a>
-          
-        </div>
-        </div>
-        <div class="col-lg-8 copy order-lg-first">
-          <p><center>&copy; 2023 - iGEM Florida State University.</center><br></p>
-      </div>
-    </div>
-  </footer>
-</html>
-
 
 {% endblock %}
