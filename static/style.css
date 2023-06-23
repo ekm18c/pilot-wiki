@@ -1,3 +1,5 @@
+/* DEBUG
+
 @keyframes movingGradient {
   0% {
     background-position: 0% 0%;
@@ -39,6 +41,8 @@ body {
 
 /*  background-image: linear-gradient(to right,#ff0800, blue);*/
 
+/* DEBUG 
+
 #splash{
   background-image: url('https://gifdb.com/images/high/just-keep-swimming-animated-school-of-fish-6yy94igqkvkqhet3.webp');
   opacity: 0.75;
@@ -60,14 +64,14 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
    -webkit-text-stroke: .1px  #E2E3E2;
 
-}*/
+}*/  /* DEBUG
 
  #splash h1{
   font-size: 5em;
   text-align: center;
 	font-size: 90px;
   color: rgb(0, 0, 0); 
-  text-shadow: 0 0 10px rgba(60, 156, 67,1); /* Add a initial glow effect */
+  text-shadow: 0 0 10px rgba(60, 156, 67,1); /* Add a initial glow effect */  /* DEBUG
   animation: glowingText 2s ease-in-out infinite; 
   font-family: 'Audiowide', sans-serif;
 
@@ -94,7 +98,7 @@ body {
   animation: gradientMove 5s infinite linear;
   text-outline: 2px solid #000;
 
-}*/
+}*/ /* DEBUG
 
 #content {
   margin: 0 auto;
@@ -161,7 +165,7 @@ body {
   color: white;
   padding: 10px;
   text-decoration: none;
-  text-shadow: 0 0 10px rgba(60, 156, 67,1); /* Add a initial glow effect */
+  text-shadow: 0 0 10px rgba(60, 156, 67,1); /* Add a initial glow effect */ /* DEBUG
   animation: glowingText 2s ease-in-out infinite; 
   display: block;
 }
@@ -176,7 +180,7 @@ body {
 
 
 
-/* the rest of this is the footer css*/
+/* the rest of this is the footer css*/ /* DEBUG
 .footer {
   background-color: var(--dark) !important;
   color: var(--white);
@@ -298,3 +302,7 @@ body {
 .footer .creds .socials > div a {
   display: inline-block;
 }
+
+*/
+
+
