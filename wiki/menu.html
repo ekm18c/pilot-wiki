@@ -1,11 +1,8 @@
- 
-
-<nav class="navbar py-3 navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container">
-    
 
     <!---- TEAM NAME ---->
-    <a class="navbar-brand" href="{{ url_for('index') }}" style="font-family:sans-serif; color:#02b9be; font-size:24px;"><b>Sea Clear</b><img src="https://static.igem.wiki/teams/4475/wiki/logo/image-6487327-removebg-preview.png" style="margin-left: 10px; height: 40px;"></a>
+    <a class="navbar-brand" href="#">FSU</a>
 
     <!---- SMALL SCREEN MENU ICON ---->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,21 +10,22 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      
-      <!-- Change this for aligning nav links-->
-      <ul class="navbar-nav mx-auto">
+      <ul class="navbar-nav ml-auto left-aligned">
 
         <!---- HOME ---->
         <li class="nav-item">
-          <a class="nav-link, d-none" href="{{ url_for('index') }}">Home</a>
+          <a class="nav-link" href="{{ url_for('home') }}">Home</a>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('pages', page='description') }}">Description </a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('pages', page='human-practices') }}">Human Practices</a>
+        <!---- TEAM ---->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="{{ url_for('pages', page='team') }}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Team
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='team') }}">Team</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='attributions') }}">Attributions</a></li>
+          </ul>
         </li>
 
         <!---- PROJECT ---->
@@ -36,46 +34,26 @@
             Project
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-          
             <li><a class="dropdown-item" href="{{ url_for('pages', page='contribution') }}">Contribution</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='engineering') }}">Engineering Success</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='implementation') }}">Implementation</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='model') }}">Modeling</a></li>
-
-                        
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='description') }}">Description</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='engineering') }}">Engineering</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='experiments') }}">Experiments</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='notebook') }}">Notebook</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='results') }}">Results</a></li>
           </ul>
         </li>
 
-        <!---- PARTS ---->
-         <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('pages', page='parts') }}">Parts</a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('pages', page='communication') }}">Education</a>
-        </li>
-
-        <!-- -- SAFETY --
+        <!---- SAFETY ---->
         <li class="nav-item">
           <a class="nav-link" href="{{ url_for('pages', page='safety') }}">Safety</a>
-        </li> -->
-
-
-         <!---- TEAM ---->
-         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="{{ url_for('pages', page='attributions') }}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Team
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='attributions') }}">Attributions</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='collaborations') }}">Collaborations</a></li>
-            <a class="d-none" href="{{ url_for('pages', page='description') }}">Description URL</a>
-          </ul>
         </li>
 
+        <!---- HUMAN PRACTICES ---->
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('pages', page='human-practices') }}">Human Practices</a>
+        </li>
 
-
-        <!---- AWARDS 
+        <!---- AWARDS ---->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Awards
@@ -91,11 +69,59 @@
             <li><a class="dropdown-item" href="{{ url_for('pages', page='software') }}">Software</a></li>
             <li><a class="dropdown-item" href="{{ url_for('pages', page='sustainable') }}">Sustainable</a></li>
           </ul>
-        </li> 
-        ---->
+        </li>
 
       </ul>
+ <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="GitLab Pages">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Oswald&display=swap" rel="stylesheet">
+
+    <title>iGEM TMAU</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="https://pages.gitlab.io/plain-html/">Project</a>
+      <div class="dropdown">
+        <a href="...">Wet Lab</a>
+        <div class="dropdown-content">
+          <a href="...">Engineering</a>
+          <a href="...">Experiments</a>
+          <a href="...">Results</a>
+          <a href="...">Proof of Concept</a>
+          <a href="...">Parts</a>
+          <a href="...">Safety</a>
+          <a href="...">Notebook</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="...">Dry Lab</a>
+        <div class="dropdown-content">
+          <a href="...">Model</a>
+          <a href="...">Hardware</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="...">Human Practices</a>
+        <div class="dropdown-content">
+          <a href="...">Integrated Human Practices</a>
+          <a href="...">Education</a>
+          <a href="...">Communication</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a>Team</a>
+        <div class="dropdown-content">
+          <a href="team.html">Members</a>
+          <a href="...">Collaborations</a>
+          <a href="...">Attributions</a>
+        </div>
+      </div>
     </div>
- 
   </div>
 </nav>
+    </body>
