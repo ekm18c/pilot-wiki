@@ -2,15 +2,11 @@
 <html lang="en">
   <head>
     <!-- Required meta tags -->
+   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/static/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://static.igem.wiki/common/icons/favicons/igem-2022.svg"/>
     <link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
-
-  
-    <link href="{{ url_for('static', filename = 'all.min.css') }}" rel="stylesheet">
-  
-  
 
     <!-- Bootstrap CSS -->
     <link href="{{ url_for('static', filename = 'bootstrap.min.css') }}" rel="stylesheet">
@@ -18,19 +14,7 @@
     <!-- Custom CSS -->
     <link href="{{ url_for('static', filename = 'style.css') }}" rel="stylesheet">
 
-    <!-- Force Scroll to Top On Refresh -->
-  <script>
-    history.scrollRestoration = "manual";
-
-    $(window).on('beforeunload', function(){
-      $(window).scrollTop(0);
-    });
-  </script>
-    
-
-
-
-    <title>{% block title %}{% endblock %} | FSU - iGEM 2022</title>
+    <title>{% block title %}{% endblock %} | FSU - iGEM 2023</title>
 
 </head>
 <body>
@@ -44,6 +28,51 @@
         <div class="col-lg-12">
           <h1 class="display-4 text-white mt-5 mb-2">{{ self.title() }}</h1>
 	        <p class="lead mb-5 text-white-50">{% block lead %}{% endblock %}</p>
+    <meta name="generator" content="GitLab Pages">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Oswald&display=swap" rel="stylesheet">
+
+    <title>iGEM TMAU</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="https://pages.gitlab.io/plain-html/">Project</a>
+      <div class="dropdown">
+        <a href="...">Wet Lab</a>
+        <div class="dropdown-content">
+          <a href="...">Engineering</a>
+          <a href="...">Experiments</a>
+          <a href="...">Results</a>
+          <a href="...">Proof of Concept</a>
+          <a href="...">Parts</a>
+          <a href="...">Safety</a>
+          <a href="...">Notebook</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="...">Dry Lab</a>
+        <div class="dropdown-content">
+          <a href="...">Model</a>
+          <a href="...">Hardware</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="...">Human Practices</a>
+        <div class="dropdown-content">
+          <a href="...">Integrated Human Practices</a>
+          <a href="...">Education</a>
+          <a href="...">Communication</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a>Team</a>
+        <div class="dropdown-content">
+          <a href="team.html">Members</a>
+          <a href="...">Collaborations</a>
+          <a href="...">Attributions</a>
         </div>
       </div>
     </div>
@@ -56,12 +85,3 @@
 
   <!-- Footer: MUST mention license AND have a link to team wiki's repository on gitlab.igem.org -->
   {% include 'footer.html' %}
-
-  <!-- Bootstrap Bundle with Popper -->
-  <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
-  <script src="{{ url_for('static', filename = 'checkscroll.js') }}"></script>
-  
-  
- 
-</body>
-</html>
