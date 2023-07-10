@@ -4,31 +4,168 @@
 {% block lead %}On this page you can introduce your team members, instructors, and advisors.{% endblock %}
 
 {% block page_content %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flipping Cards</title>
+  <link rel="stylesheet" type="text/css" href="team.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="team.js"></script>
 
-<div class="row">
-  <div class="col-8">
-    <h2>What should this page contain?</h2>
-    <hr>
-    <ul>
-      <li>Include pictures of your teammates, don't forget instructors and advisors!</li>
-      <li>You can add a small biography or a few words from each team member, to tell us what you like, and what motivated you to participate in iGEM.</li>
-      <li>Take team pictures! Show us your school, your lab and little bit of your city.</li>
-      <li>Remember that image galleries can help you showcase many pictures while saving space.</li>
-    </ul>
-    <div class="bd-callout bd-callout-info"><strong>Important:</strong> Your wiki pages will be archived at the end of the iGEM season and this content will remain online. Please keep this in mind as you post photos and personal information on this page.</div>
+</head>
+<div class="fish-container">
+    <img src="https://static.igem.wiki/teams/4680/wiki/goldfish.png" alt="Fish" class="fish">
   </div>
-  <div class="col-4">
-    <h2>Inspirations</h2>
-    <hr>
-    <ul>
-      <li><a href="https://2019.igem.org/Team:CU/Team">2019 CU</a></li>
-      <li><a href="https://2019.igem.org/Team:UANL/Team">2019 UANL</a></li>
-      <li><a href="https://2019.igem.org/Team:William_and_Mary/Team">2019 William and Mary</a></li>
-      <li><a href="https://2020.igem.org/Team:BOKU-Vienna/Team">2020 BOKU Vienna </a></li>
-      <li><a href="https://2020.igem.org/Team:CAU_China/Team_Member">2020 CAU China</a></li>
-      <li><a href="https://2020.igem.org/Team:Lethbridge/Members">2020 Lethbridge</a></li>
-    </ul>
+  <h1 class="page-title">Our Team</h1>
+  
+  <section id="team">
+    <div class="card" onclick="flipCard(this)">
+      <div class="front">
+        <h1>Front Side</h1>
+        <div class="image-container">
+          <img src="/tmau/public/images/fsu-office-research-v-removebg-preview.png" alt="Card Image" class="card-image">
+        </div>
+        <p>This is the front side of the card.</p>
+      </div>
+      <div class="back">
+        <h1>Back Side</h1>
+        <p>This is the back side of the card.</p>
+      </div>
+    </div>
+  
+  <div class="card" onclick="flipCard(this)">
+    <div class="front">
+        <h1>Front Side</h1>
+        <p>This is the front side of the card.</p>
+    </div>
+    <div class="back">
+        <h1>Back Side</h1>
+        <p>This is the back side of the card.</p>
+    </div>
+</div>
+
+
+<div class="card" onclick="flipCard(this)">
+  <div class="front">
+      <h1>Front Side</h1>
+      <p>This is the front side of the card.</p>
+  </div>
+  <div class="back">
+      <h1>Back Side</h1>
+      <p>This is the back side of the card.</p>
   </div>
 </div>
+  </section>
+
+  <section id="team">
+    <div class="card" onclick="flipCard(this)">
+      <div class="front">
+          <h1>Front Side</h1>
+          <p>This is the front side of the card.</p>
+      </div>
+      <div class="back">
+          <h1>Back Side</h1>
+          <p>This is the back side of the card.</p>
+      </div>
+  </div>
+
+
+  <div class="card" onclick="flipCard(this)">
+    <div class="front">
+        <h1>Front Side</h1>
+        <p>This is the front side of the card.</p>
+    </div>
+    <div class="back">
+        <h1>Back Side</h1>
+        <p>This is the back side of the card.</p>
+    </div>
+</div>
+
+
+<div class="card" onclick="flipCard(this)">
+  <div class="front">
+      <h1>Front Side</h1>
+      <p>This is the front side of the card.</p>
+  </div>
+  <div class="back">
+      <h1>Back Side</h1>
+      <p>This is the back side of the card.</p>
+  </div>
+</div>
+  </section>  <section id="team">
+    <div class="card" onclick="flipCard(this)">
+      <div class="front">
+          <h1>Front Side</h1>
+          <p>This is the front side of the card.</p>
+      </div>
+      <div class="back">
+          <h1>Back Side</h1>
+          <p>This is the back side of the card.</p>
+      </div>
+  </div>
+
+
+  <div class="card" onclick="flipCard(this)">
+    <div class="front">
+        <h1>Front Side</h1>
+        <p>This is the front side of the card.</p>
+    </div>
+    <div class="back">
+        <h1>Back Side</h1>
+        <p>This is the back side of the card.</p>
+    </div>
+</div>
+
+
+<div class="card" onclick="flipCard(this)">
+  <div class="front">
+      <h1>Front Side</h1>
+      <p>This is the front side of the card.</p>
+  </div>
+  <div class="back">
+      <h1>Back Side</h1>
+      <p>This is the back side of the card.</p>
+  </div>
+</div>
+  </section>  <section id="team">
+    <div class="card" onclick="flipCard(this)">
+      <div class="front">
+          <h1>Front Side</h1>
+          <p>This is the front side of the card.</p>
+      </div>
+      <div class="back">
+          <h1>Back Side</h1>
+          <p>This is the back side of the card.</p>
+      </div>
+  </div>
+
+
+  <div class="card" onclick="flipCard(this)">
+    <div class="front">
+        <h1>Front Side</h1>
+        <p>This is the front side of the card.</p>
+    </div>
+    <div class="back">
+        <h1>Back Side</h1>
+        <p>This is the back side of the card.</p>
+    </div>
+</div>
+
+
+<div class="card" onclick="flipCard(this)">
+  <div class="front">
+      <h1>Front Side</h1>
+      <p>This is the front side of the card.</p>
+  </div>
+  <div class="back">
+      <h1>Back Side</h1>
+      <p>This is the back side of the card.</p>
+  </div>
+</div>
+  </section>
+
+</body>
+</html>
+
 
 {% endblock %}
