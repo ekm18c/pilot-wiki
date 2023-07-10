@@ -1,5 +1,5 @@
 <div class="navbar">
-      <a class="nav-link, d-none" href="{{ url_for('home') }}">Project</a>
+      <a class="nav-link d-none" href="{{ url_for('home') }}">Project</a>
       <div class="dropdown">
         <a href="...">Wet Lab</a>
         <div class="dropdown-content">
@@ -8,7 +8,7 @@
           <a href="{{ url_for('pages', page='results') }}" class="nav-link">Results</a>
           <a href="{{ url_for('pages', page='proof-of-concept') }}" class="nav-link">Proof of Concept</a>
           <a href="{{ url_for('pages', page='parts') }}" class="nav-link">Parts</a>
-         <a href="{{ url_for('pages', page='safety') }}" class="nav-link">Safety</a>
+          <a href="{{ url_for('pages', page='safety') }}" class="nav-link">Safety</a>
           <a href="{{ url_for('pages', page='notebook') }}" class="nav-link">Notebook</a>
         </div>
       </div>
@@ -35,4 +35,4 @@
           <a href="{{ url_for('pages', page='attributions') }}" class="nav-link">Attributions</a>
         </div>
       </div>
-    </div>
+</div>
