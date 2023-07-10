@@ -1,5 +1,4 @@
 <div class="navbar">
-      <a class="nav-link" href="{{ url_for('home') }}">Project</a>
       <a  class="nav-link" href="{{ url_for('pages', page='home') }}">Project</a>
       <div class="dropdown">
         <a>Wet Lab</a>
@@ -10,7 +9,7 @@
           <a  class="nav-link" href="{{ url_for('pages', page='proof-of-concept') }}">Proof of Concept</a>
           <a  class="nav-link" href="{{ url_for('pages', page='parts') }}">Parts</a>
           <a  class="nav-link" href="{{ url_for('pages', page='safety') }}">Safety</a>
-          <a href="...">Notebook</a>
+          <a  class="nav-link" href="{{ url_for('pages', page='notebook') }}">Notebook</a>
         </div>
       </div>
       <div class="dropdown">
