@@ -1,4 +1,5 @@
 <div class="navbar">
+      <a class="nav-link" href="{{ url_for('home') }}">Project</a>
       <a  class="nav-link" href="{{ url_for('pages', page='home') }}">Project</a>
       <div class="dropdown">
         <a>Wet Lab</a>
@@ -8,31 +9,31 @@
           <a  class="nav-link" href="{{ url_for('pages', page='results') }}">Results</a>
           <a  class="nav-link" href="{{ url_for('pages', page='proof-of-concept') }}">Proof of Concept</a>
           <a  class="nav-link" href="{{ url_for('pages', page='parts') }}">Parts</a>
-          <a  class="nav-link" href="{{ url_for('pages', page='safety') }}">Safety</a>
-          <a  class="nav-link" href="{{ url_for('pages', page='notebook') }}">Notebook</a>
+          <a href="...">Safety</a>
+          <a href="...">Notebook</a>
         </div>
       </div>
       <div class="dropdown">
-        <a>Dry Lab</a>
+        <a href="...">Dry Lab</a>
         <div class="dropdown-content">
-          <a  class="nav-link" href="{{ url_for('pages', page='model') }}">Model</a>
-          <a  class="nav-link" href="{{ url_for('pages', page='hardware') }}">Hardware</a>
+          <a href="...">Model</a>
+          <a href="...">Hardware</a>
         </div>
       </div>
       <div class="dropdown">
-        <a>Human Practices</a>
+        <a href="...">Human Practices</a>
         <div class="dropdown-content">
-          <a  class="nav-link" href="{{ url_for('pages', page='human-practices') }}">Integrated Human Practices</a>
-          <a  class="nav-link" href="{{ url_for('pages', page='education') }}">Education</a>
-          <a  class="nav-link" href="{{ url_for('pages', page='communication') }}">Communication</a>
+          <a href="...">Integrated Human Practices</a>
+          <a href="...">Education</a>
+          <a href="...">Communication</a>
         </div>
       </div>
       <div class="dropdown">
         <a>Team</a>
         <div class="dropdown-content">
-          <a  class="nav-link" href="{{ url_for('pages', page='team') }}">Members</a>
-          <a  class="nav-link" href="{{ url_for('pages', page='collaborations) }}">Collaborations</a>
-          <a  class="nav-link" href="{{ url_for('pages', page='attributions') }}">Attributions</a>
+          <a href="team.html">Members</a>
+          <a href="...">Collaborations</a>
+          <a href="...">Attributions</a>
         </div>
       </div>
     </div>
