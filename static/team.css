@@ -101,7 +101,7 @@ body{
 
 
 .card .back {
-  background-color: purple;
+  background-color: green;
   transform: rotateY(180deg);
   position: relative;
   height: 520px;
