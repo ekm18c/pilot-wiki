@@ -4,8 +4,8 @@
 <html>
 <head>
   <title>Flipping Cards</title>
-  <link rel="stylesheet" type="text/css" href="team.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="{{ url_for('static', filename = 'style.css') }}" rel="stylesheet"/>
+  <link href="{{ url_for('static', filename = 'team.css') }}" rel="stylesheet"/>
   <script src="{{ url_for('static', filename = 'team.js') }}"></script>
 
 </head>
