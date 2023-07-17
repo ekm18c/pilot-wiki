@@ -103,7 +103,6 @@ body{
   position: relative;
   height: 450px;
   width: 300px;
-  margin-left: -40px;
 }
 
 .card.flipped {
