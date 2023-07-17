@@ -47,6 +47,7 @@ body{
   padding: 20px;
   cursor: pointer;
   margin: 50px;
+  background-color: transparent;
 }
 
 .card .front,
