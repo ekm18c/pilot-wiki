@@ -68,6 +68,7 @@ body{
   border: 2px solid #000;
   height: 450px;
   width: 300px;
+  backface-visibility: hidden;
 }
 
 .image-container {
@@ -103,6 +104,7 @@ body{
   position: relative;
   height: 450px;
   width: 300px;
+  backface-visibility: hidden;
 }
 
 .card.flipped {
@@ -119,12 +121,11 @@ body{
 
 .front,
 .back {
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  backface-visibility: hidden; /* Hide the backface of the card */
+  backface-visibility: hidden;
   transform-style: preserve-3d;
 }
 
