@@ -102,12 +102,13 @@ body{
 
 
 .card .back {
-  background-color: pink;
+  background-color: green;
   transform: rotateY(180deg);
   position: relative;
   width: 300px;
   height: 450px;
   margin-left: -50px;
+  margin-bottom: -50px;
   backface-visibility: hidden;
 }
 
@@ -120,7 +121,7 @@ body{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0px;
-  margin-left: 40px;
+  margin-left: 18px;
   margin-bottom: 40px;
 }
 
