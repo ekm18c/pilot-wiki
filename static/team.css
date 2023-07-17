@@ -1,11 +1,12 @@
 .fish-container {
-  position: fixed;
-  top: 0%;
+  position: absolute;
+  top: 50%;
   left: -200px; /* Start the fish outside the screen */
   width: 200px; /* Adjust the width and height as needed */
   height: 100px;
   animation: fishSwim 8s linear infinite;
   z-index: 1; /* Ensure the fish stays on top */
+  transform: translate(-50%,-50%);
 }
 
 .fish-container img {
@@ -19,6 +20,17 @@
   margin-bottom: 50px;
   margin-left: -100px;
   margin-right: -100px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1; /* Places this below the image container */
+  margin-left: -100px;
 }
 
 @keyframes fishSwim {
