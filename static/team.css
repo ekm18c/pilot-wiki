@@ -47,6 +47,7 @@ body{
   padding: 20px;
   cursor: pointer;
   margin: 50px;
+  margin-left: 40px;
   background-color: transparent;
   border: none;
 }
