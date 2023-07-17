@@ -145,6 +145,7 @@ body {
 
 .dropdown {
   position: relative;
+  z-index: 2;
 }
 
 .dropdown-content {
