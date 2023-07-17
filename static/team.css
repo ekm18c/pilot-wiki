@@ -5,7 +5,7 @@
   width: 200px;
   height: 100px;
   animation: fishSwim 8s linear infinite;
-  z-index: 9999;
+  z-index: 1;
 }
 
 .fish-container img {
