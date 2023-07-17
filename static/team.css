@@ -13,6 +13,9 @@
   height: auto; /* Maintain aspect ratio */
 }
 
+.banner{
+  background-color: pink;
+}
 
 @keyframes fishSwim {
   0% {
