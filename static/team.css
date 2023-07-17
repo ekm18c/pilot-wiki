@@ -1,42 +1,47 @@
 .fish-container {
   position: fixed;
-  top: 0;
-  left: -200px;
-  width: 200px;
+  top: 0%;
+  left: -200px; /* Start the fish outside the screen */
+  width: 200px; /* Adjust the width and height as needed */
   height: 100px;
   animation: fishSwim 8s linear infinite;
-  z-index: 2;
+  z-index: 1; /* Ensure the fish stays on top */
 }
 
 .fish-container img {
-  width: 100%;
-  height: auto;
+  width: 100%; /* Adjust the width as desired */
+  height: auto; /* Maintain aspect ratio */
 }
 
-.banner {
+.banner{
   background-color: pink;
-  margin-left: -100px;
-  margin-right: -100px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+    margin: -50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+@keyframes fishSwim {
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+body{
+    font-family: oswald, sans-serif;
+}
+.page-title-container {
   position: relative;
   overflow: hidden;
-  z-index: 1;
 }
 
-.banner h2 {
-  opacity: 0;
-  transition: opacity 0.3s ease;
+.page-title {
+  text-align: center;
+  font-size: 50px;
+  margin-top: -50px;
 }
 
-.banner.show h2 {
-  opacity: 1;
-}
-
-.container {
-  position: relative;
-  z-index: 1;
-}
 
 .card {
   width: 300px;
@@ -84,8 +89,8 @@
 }
 
 .card-image {
-  width: 200px;
-  height: 200px;
+  width: 200px; /* Adjust the width as desired */
+  height: 200px; /* Adjust the height as desired */
   border: 2px solid #000;
   border-radius: 50%;
   overflow: hidden;
@@ -100,6 +105,7 @@
   height: 100%;
   object-fit: cover;
 }
+
 
 .card .back {
   background-color: green;
@@ -133,19 +139,10 @@
   justify-content: center;
   backface-visibility: hidden;
   transform-style: preserve-3d;
-  width: 300px;
+   width: 300px;
   height: 450px;
 }
 
 .back {
   display: none;
-}
-
-@keyframes fishSwim {
-  0% {
-    left: -200px;
-  }
-  100% {
-    left: calc(100% + 200px);
-  }
 }
