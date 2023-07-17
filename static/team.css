@@ -5,7 +5,7 @@
   width: 200px;
   height: 100px;
   animation: fishSwim 8s linear infinite;
-  z-index: -1;
+  z-index: 9999;
 }
 
 .fish-container img {
@@ -20,7 +20,6 @@
   margin-top: 50px;
   margin-bottom: 50px;
   position: relative;
-  z-index: -1;
 }
 @keyframes fishSwim {
   0% {
@@ -33,7 +32,6 @@
 
 .page-title {
   position: relative;
-  z-index: 1;
 }
 
 body{
