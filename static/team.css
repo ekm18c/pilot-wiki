@@ -15,7 +15,8 @@
 
 .banner {
   background-color: pink;
-  margin: -50px;
+  margin-left: -100px;
+  margin-right: -100px;
   margin-top: 50px;
   margin-bottom: 50px;
   position: relative;
