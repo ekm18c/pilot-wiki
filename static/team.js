@@ -1,13 +1,13 @@
 function flipCard(card) {
-    card.classList.toggle("flipped");
+  card.classList.toggle("flipped");
 }
-const container = document.querySelector('.container');
-const overlay = document.querySelector('.banner');
+const fishContainer = document.querySelector('.fish-container');
+const banner = document.querySelector('.banner');
 
-container.addEventListener('mouseover', () => {
-  overlay.style.opacity = 1;
+fishContainer.addEventListener('mouseover', () => {
+  banner.style.opacity = 1;
 });
 
-container.addEventListener('mouseout', () => {
-  overlay.style.opacity = 0;
+fishContainer.addEventListener('mouseout', () => {
+  banner.style.opacity = 0;
 });
