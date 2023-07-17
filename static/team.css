@@ -1,144 +1,17 @@
-@keyframes movingGradient {
-  0% {
-    background-position: 0% 0%;
-  }
-  100% {
-    background-position: 100% 100%;
-  }
-}
-
-@keyframes gradientMove {
-  0% {
-    background-position: left;
-  }
-  100% {
-    background-position: right;
-  }
-}
-
-@keyframes glowingText {
-  0% {
-    text-shadow: 0 0 10px rgb(61, 171, 83);
-  }
-  50% {
-    text-shadow: 0 0 20px rgba(178, 76, 149, 0.7), 0 0 30px rgb(207, 237, 11);
-  }
-  100% {
-    text-shadow: 0 0 10px rgb(0, 179, 255);
-  }
-}
-
-body {
-  animation: movingGradient 3s linear infinite alternate;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  font-family: "futura", sans-serif;
-  background-image: linear-gradient(to right, #F0D2D1, #B3E1E6, #F6EFA6, rgb(142, 177, 157));
-  background-size: 200% 200%;
-}
-
-#splash {
-  background-image: url('https://gifdb.com/images/high/just-keep-swimming-animated-school-of-fish-6yy94igqkvkqhet3.webp');
-  opacity: 0.75;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 0px;
-  margin: 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#splash h1 {
-  font-size: 5em;
-  text-align: center;
-  font-size: 90px;
-  color: rgb(0, 0, 0);
-  text-shadow: 0 0 10px rgba(60, 156, 67, 1);
-  animation: glowingText 2s ease-in-out infinite;
-  font-family: 'Audiowide', sans-serif;
-}
-
-#content h2 {
-  text-align: center;
-  font-size: 2em;
-  padding: 0px;
-  font-family: 'Oswald', sans-serif;
-}
-
-.navbar {
-  background-color: rgba(142, 177, 157, 0.5);
-  border-radius: 2px;
-  width: 100%;
+.fish-container {
   position: fixed;
-  z-index: 1;
-  display: flex;
-  justify-content: flex-end;
-  padding-left: 20px;
-  font-size: 20px;
+  top: 0;
+  left: -200px;
+  width: 200px;
+  height: 100px;
+  animation: fishSwim 8s linear infinite;
+  z-index: 2;
 }
 
-.yellow {
-  background-color: #F6EFA6;
-  margin: 0;
+.fish-container img {
+  width: 100%;
+  height: auto;
 }
-
-.pink {
-  background-color: #F0D2D1;
-  margin: 0;
-}
-
-.navbar a {
-  display: inline-block;
-  color: rgb(0, 0, 0);
-  -webkit-text-stroke: .1px  #E2E3E2;
-  text-shadow: 0px 2px 4px rgb(38, 124, 38);
-  padding: 10px;
-  padding-right: 110px;
-  text-decoration: none;
-  font-family: 'Oswald', sans-serif;
-  position: relative;
-  z-index: 9999;
-}
-
-.navbar a:hover {
-  color: #ffffff;
-}
-
-.dropdown {
-  position: relative;
-  z-index: 9999;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 9999;
-}
-
-.dropdown-content a {
-  color: rgb(197, 236, 188);
-  padding: 10px;
-  text-decoration: none;
-  text-shadow: 0 0 10px rgba(60, 156, 67, 1);
-  animation: glowingText 2s ease-in-out infinite;
-  display: block;
-  z-index: 9999;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-  z-index: 9999;
-}
-
-.dropdown:hover > a {
-  background-color: transparent;
-}
-
-/* Team CSS */
 
 .banner {
   background-color: pink;
@@ -146,16 +19,9 @@ body {
   margin-right: -100px;
   margin-top: 50px;
   margin-bottom: 50px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: transform 0.3s ease;
-  pointer-events: none;
-}
-
-.banner.show {
-  transform: translate(-50%, -50%) scale(1.2);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
 }
 
 .banner h2 {
@@ -170,50 +36,6 @@ body {
 .container {
   position: relative;
   z-index: 1;
-}
-
-.fish-container {
-  position: fixed;
-  top: 0;
-  left: -200px;
-  width: 200px;
-  height: 100px;
-  animation: fishSwim 8s linear infinite;
-  z-index: 0;
-}
-
-.fish-container img {
-  width: 100%;
-  height: auto;
-}
-
-@keyframes fishSwim {
-  0% {
-    left: -200px;
-  }
-  100% {
-    left: calc(100% + 200px);
-  }
-}
-
-.page-title {
-  position: relative;
-  z-index: 1;
-}
-
-body {
-  font-family: oswald, sans-serif;
-}
-
-.page-title-container {
-  position: relative;
-  overflow: hidden;
-}
-
-.page-title {
-  text-align: center;
-  font-size: 50px;
-  margin-top: -50px;
 }
 
 .card {
@@ -313,4 +135,17 @@ body {
   transform-style: preserve-3d;
   width: 300px;
   height: 450px;
+}
+
+.back {
+  display: none;
+}
+
+@keyframes fishSwim {
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: calc(100% + 200px);
+  }
 }
