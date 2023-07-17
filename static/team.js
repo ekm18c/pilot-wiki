@@ -3,11 +3,12 @@ function flipCard(card) {
 }
 const fishContainer = document.querySelector('.fish-container');
 const banner = document.querySelector('.banner');
+const bannerText = document.querySelector('.banner h2');
 
 fishContainer.addEventListener('mouseover', () => {
-  banner.style.opacity = 1;
+  banner.classList.add('show');
 });
 
 fishContainer.addEventListener('mouseout', () => {
-  banner.style.opacity = 0;
+  banner.classList.remove('show');
 });
