@@ -10,7 +10,7 @@
 
 .fish-container img {
   width: 100%; /* Adjust the width as desired */
-  height: auto; /* Maintain aspect ratio */
+  height: 50px; /* Maintain aspect ratio */
 }
 
 
