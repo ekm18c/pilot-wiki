@@ -15,6 +15,7 @@
 
 .banner{
   background-color: pink;
+  margin:0px;
 }
 
 @keyframes fishSwim {
