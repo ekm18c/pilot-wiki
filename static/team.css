@@ -48,6 +48,7 @@ body{
   cursor: pointer;
   margin: 50px;
   background-color: transparent;
+  border: none;
 }
 
 .card .front,
