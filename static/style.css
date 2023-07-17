@@ -152,6 +152,7 @@ body {
   display: none;
   position: absolute;
   background-color: rgba(0,0,0,0.7);
+  z-index: 9999;
 }
 
 .dropdown-content a {
@@ -161,10 +162,12 @@ body {
   text-shadow: 0 0 10px rgba(60, 156, 67,1); /* Add a initial glow effect */
   animation: glowingText 2s ease-in-out infinite; 
   display: block;
+  z-index: 9999;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
+  z-index: 9999;
 }
 
 .dropdown:hover > a {
