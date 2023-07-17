@@ -99,7 +99,7 @@ body{
 
 
 .card .back {
-  background-color: blue;
+  background-color: purple;
   transform: rotateY(180deg);
   position: relative;
   height: 520px;
