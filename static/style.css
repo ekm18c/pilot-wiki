@@ -111,6 +111,7 @@ body {
   display: flex;
   justify-content: flex-end; 
   padding-left: 20px;
+  font-size: 20px;
 }
 
 .yellow{
