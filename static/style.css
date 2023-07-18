@@ -138,6 +138,11 @@ img.logo{
   font-family: 'Audiowide', sans-serif;
 }
 
+span.tmau{
+    font-weight: bold;
+  font-family: 'Audiowide', sans-serif;
+}
+
 .yellow{
   background-color: #F6EFA6;
   margin: 0;
@@ -165,7 +170,7 @@ img.logo{
 }
 
 .navbar a:hover {
-  color: #ffffff;
+  color: pink;
 }
 
 .dropdown {
