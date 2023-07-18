@@ -138,6 +138,8 @@ img.logo{
 .tmau {
   font-weight: bold;
   font-family: 'Audiowide', sans-serif;
+  align-items: right;
+  padding-top: -50px;
 }
 
 .yellow{
