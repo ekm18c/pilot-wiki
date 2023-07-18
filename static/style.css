@@ -115,7 +115,7 @@ body {
   font-size: 20px;
 }
 
-..logo-container {
+.logo-container {
   display: flex;
   align-items: center;
   font-weight: bold;
