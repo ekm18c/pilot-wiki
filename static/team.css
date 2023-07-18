@@ -1,11 +1,11 @@
 .fish-container {
   position: absolute;
-  top: 150px;
+  top: 120px;
   left: -200px; /* Start the fish outside the screen */
   width: 200px; /* Adjust the width and height as needed */
   height: 100px;
   animation: fishSwim 8s linear infinite;
-  z-index: 1; /* Ensure the fish stays below the banner */
+  z-index: 0; /* Ensure the fish stays below the banner */
 }
 
 /* Update the position and z-index of the text container */
@@ -26,9 +26,11 @@
   display: block;
   position: relative;
   overflow: hidden;
+  z-index: -1;
 }
-.banner h2{
-  z-index: 2;
+.banner h2 {
+  position: relative;
+  z-index: 2; /* Set a higher z-index for the h2 text */
 }
 
 @keyframes fishSwim {
