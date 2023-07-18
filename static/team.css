@@ -1,17 +1,4 @@
-@keyframes image-slide {
-  0% { transform: translateX(-250px) scale(0); }
-  60% { transform: translateX(-250px) scale(1); }
-  90% { transform: translateX(150px) scale(1); }
-  100% { transform: translateX(150px) scale(1); }  
-}
 
-/* Slides the text by shrinking the width of the object from full (100%) to nada (0%) */
-@keyframes text-slide {
-  0% { width: 100%; }
-  60% { width: 100%; }
-  75%{ width: 0; }
-  100% { width: 0; }
-}
 .fish-container {
   position: absolute;
   top: 150px;
@@ -24,36 +11,7 @@
 }
 
 /* Update the position and z-index of the text container */
-.text-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  z-index: 2; /* Places this above the image container and below the fish */
-  text-align: center;
-  opacity: 0; /* Hide the text initially */
-  transition: opacity 0.5s ease; /* Add transition effect for opacity */
-}
 
-.fish-container:hover + .text-container {
-  opacity: 1; /* Reveal the text when the fish container is hovered */
-}
-
-/* Add transition to the fading effect */
-.fading-effect {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  background: white;
-  transition: opacity 0.5s;
-}
-
-/* Add class to modify fading effect opacity */
-.fading-effect-reveal {
-  opacity: 0; /* Make the fading effect invisible */
-}
 .fish-container img {
   width: 100%; /* Adjust the width as desired */
   height: auto; /* Maintain aspect ratio */
