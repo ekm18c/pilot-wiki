@@ -115,17 +115,16 @@ body {
   font-size: 20px;
 }
 
-.logo-container{
+..logo-container {
+  display: flex;
   align-items: center;
   font-weight: bold;
   font-size: 40px;
-  margin-left: -500px;
-  margin-right: 100px;
   font-family: 'Audiowide', sans-serif;
 }
 
 .logo {
-  margin-left: -50px;
+  margin-right: 10px;
 }
 
 img.logo{
