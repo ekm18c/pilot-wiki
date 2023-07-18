@@ -28,11 +28,13 @@
   overflow: hidden;
   z-index: -1;
 }
-.banner h2 {
-  position: relative;
+.banner h2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 2; /* Set a higher z-index for the h2 text */
 }
-
 @keyframes fishSwim {
   0% {
     left: -200px;
