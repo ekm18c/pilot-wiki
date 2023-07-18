@@ -124,12 +124,12 @@ body {
 }
 
 .logo img{
-  height: 50px;
+  height: 20px;
   width: auto;
 }
 
 img.logo{
-  height: 50px;
+  height: 100px;
   width: auto;
 }
 
@@ -139,7 +139,8 @@ img.logo{
 }
 
 span.tmau{
-    font-weight: bold;
+  font-weight: bold;
+  font-size: 40px;
   font-family: 'Audiowide', sans-serif;
 }
 
