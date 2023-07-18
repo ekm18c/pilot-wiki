@@ -16,8 +16,9 @@
 }
 
 .banner {
+  text-align: center;
   background-color: pink;
-  height: 100px;
+  height: 70px;
   margin-top: 0;
   margin-bottom: 50px;
   margin-left: -100px;
