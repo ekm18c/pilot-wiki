@@ -130,8 +130,9 @@ body {
   color: rgb(0, 0, 0);
   -webkit-text-stroke: .1px  #E2E3E2;
 	text-shadow: 0px 2px 4px rgb(38, 124, 38);
-  padding: 10px;
-  padding-right: 110px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 50px;
   text-decoration: none;
   font-family: 'Oswald', sans-serif;
   position: relative;
