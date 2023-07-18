@@ -117,30 +117,25 @@ body {
 
 .logo-container{
   align-items: left;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: 'Audiowide', sans-serif;
 }
 
 .logo {
   margin-left: -50px;
 }
 
-.logo img{
-  height: 20px;
-  width: auto;
-}
-
 img.logo{
   height: 100px;
   width: auto;
+  margin-left: -50px;
+  padding-right: 10px;
+  
 }
 
 .tmau {
   font-weight: bold;
-  font-family: 'Audiowide', sans-serif;
-}
-
-span.tmau{
-  font-weight: bold;
-  font-size: 40px;
   font-family: 'Audiowide', sans-serif;
 }
 
