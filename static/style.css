@@ -114,6 +114,18 @@ body {
   font-size: 20px;
 }
 
+.logo-container{
+  align-items: left;
+}
+
+.logo {
+  margin-right: 100px;
+}
+
+.tmau {
+  font-weight: bold;
+}
+
 .yellow{
   background-color: #F6EFA6;
   margin: 0;
