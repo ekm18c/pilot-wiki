@@ -123,6 +123,11 @@ body {
   margin-right: 100px;
 }
 
+.logo img{
+  height: 50px;
+  width: auto;
+}
+
 .tmau {
   font-weight: bold;
 }
