@@ -116,9 +116,10 @@ body {
 }
 
 .logo-container{
-  align-items: left;
+  align-items: center;
   font-weight: bold;
   font-size: 40px;
+  margin-left: -50px;
   font-family: 'Audiowide', sans-serif;
 }
 
