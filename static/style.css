@@ -40,7 +40,7 @@ body {
 /*  background-image: linear-gradient(to right,#ff0800, blue);*/
 
 #splash{
-  background-image: url('https://giphy.com/embed/BtpALHDErFXjLC0nc9');
+  background-image: url("https://giphy.com/embed/BtpALHDErFXjLC0nc9");
   opacity: 0.75;
   background-position: center;
   background-repeat: no-repeat;
