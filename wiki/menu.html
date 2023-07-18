@@ -37,8 +37,21 @@
         <a>Team</a>
         <div class="dropdown-content">
           <a  class="nav-link" href="{{ url_for('pages', page='team') }}">Members</a>
-          <a  class="nav-link" href="{{ url_for('pages', page='collaboration') }}">Collaborations</a>
           <a  class="nav-link" href="{{ url_for('pages', page='attributions') }}">Attributions</a>
+          <a  class="nav-link" href="{{ url_for('pages', page='sponsors') }}">Sponsors</a>
+        </div>
+      </div>
+            <div class="dropdown">
+        <a>Outreach</a>
+        <div class="dropdown-content">
+          <a  class="nav-link" href="{{ url_for('pages', page='featured') }}">Featured</a>
+          <a  class="nav-link" href="{{ url_for('pages', page='cookbook') }}">Cookbook</a>
+        </div>
+      </div>
+            <div class="dropdown">
+        <a>Competition</a>
+        <div class="dropdown-content">
+          <a  class="nav-link" href="{{ url_for('pages', page='medals') }}">Medal Criteria</a>
         </div>
       </div>
     </div>
