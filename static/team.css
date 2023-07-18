@@ -27,6 +27,9 @@
   position: relative;
   overflow: hidden;
 }
+.banner h2{
+  z-index: 9999;
+}
 
 @keyframes fishSwim {
   0% {
