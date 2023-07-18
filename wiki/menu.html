@@ -1,30 +1,36 @@
 <div class="navbar">
-      <a  class="nav-link" href="{{ url_for('pages', page='home') }}">Project</a>
+      <a  class="nav-link" href="{{ url_for('pages', page='home') }}">Home</a>
       <div class="dropdown">
-        <a>Wet Lab</a>
+        <a>Project</a>
         <div class="dropdown-content">
           <a  class="nav-link" href="{{ url_for('pages', page='engineering') }}">Engineering</a>
-          <a  class="nav-link" href="{{ url_for('pages', page='experiments') }}">Experiments</a>
           <a  class="nav-link" href="{{ url_for('pages', page='results') }}">Results</a>
           <a  class="nav-link" href="{{ url_for('pages', page='proof-of-concept') }}">Proof of Concept</a>
-          <a  class="nav-link" href="{{ url_for('pages', page='parts') }}">Parts</a>
-          <a  class="nav-link" href="{{ url_for('pages', page='safety') }}">Safety</a>
-          <a  class="nav-link" href="{{ url_for('pages', page='notebook') }}">Notebook</a>
+          <a  class="nav-link" href="{{ url_for('pages', page='model') }}">Modeling</a>
+          <a  class="nav-link" href="{{ url_for('pages', page='contribution') }}">Contribution</a>
         </div>
       </div>
       <div class="dropdown">
-        <a>Dry Lab</a>
+        <a>Lab</a>
         <div class="dropdown-content">
-          <a  class="nav-link" href="{{ url_for('pages', page='model') }}">Model</a>
-          <a  class="nav-link" href="{{ url_for('pages', page='hardware') }}">Hardware</a>
+          <a  class="nav-link" href="{{ url_for('pages', page='parts') }}">Parts</a>
+          <a  class="nav-link" href="{{ url_for('pages', page='protocol') }}">Protocols</a>
+          <a  class="nav-link" href="{{ url_for('pages', page='notebook') }}">Notebook</a>
+          <a  class="nav-link" href="{{ url_for('pages', page='measurement') }}">Measurement</a>
         </div>
       </div>
       <div class="dropdown">
         <a>Human Practices</a>
         <div class="dropdown-content">
           <a  class="nav-link" href="{{ url_for('pages', page='human-practices') }}">Integrated Human Practices</a>
-          <a  class="nav-link" href="{{ url_for('pages', page='education') }}">Education</a>
-          <a  class="nav-link" href="{{ url_for('pages', page='communication') }}">Communication</a>
+          <a  class="nav-link" href="{{ url_for('pages', page='engagement') }}">Public Engagement</a>
+        </div>
+      </div>
+            <div class="dropdown">
+        <a>Implementation</a>
+        <div class="dropdown-content">
+          <a  class="nav-link" href="{{ url_for('pages', page='entrepreneurship') }}">Entrepreneurship</a>
+          <a  class="nav-link" href="{{ url_for('pages', page='implementation') }}">Implementation</a>
         </div>
       </div>
       <div class="dropdown">
