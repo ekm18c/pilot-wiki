@@ -121,6 +121,9 @@ body {
   font-weight: bold;
   font-size: 40px;
   font-family: 'Audiowide', sans-serif;
+  margin-right: 100px;
+  height: 50px;
+  margin-top: 10px;
 }
 
 .logo {
@@ -130,8 +133,7 @@ body {
 img.logo{
   height: 100px;
   width: auto;
-  padding-right: 50px;
-  
+  padding-right: 10px;
 }
 
 .tmau {
@@ -168,7 +170,7 @@ img.logo{
 }
 
 .navbar a:hover {
-  color: pink;
+  color: white;
 }
 
 .dropdown {
