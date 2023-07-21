@@ -1,20 +1,4 @@
-@keyframes movingGradient {
-  0% {
-    background-position: 0% 0%;
-  }
-  100% {
-    background-position: 100% 100%;
-  }
-}
 
-@keyframes gradientMove {
-  0% {
-    background-position: left;
-  }
-  100% {
-    background-position: right;
-  }
-}
 @keyframes glowingText {
   0% {
     text-shadow: 0 0 10px rgb(61, 171, 83);
@@ -28,13 +12,11 @@
 }
 
 body {
-  animation: movingGradient 3s linear infinite alternate;
+  background-color: white;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   font-family: "futura", sans-serif;
-  background-image: linear-gradient(to right,#F0D2D1, #B3E1E6,#F6EFA6,rgb(142, 177, 157));
-  background-size: 200% 200%;
 }
 
 /*  background-image: linear-gradient(to right,#ff0800, blue);*/
