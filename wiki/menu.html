@@ -14,6 +14,13 @@
           <a  class="nav-link" href="{{ url_for('pages', page='contribution') }}">Contribution</a>
         </div>
       </div>
+           <div class="dropdown">
+        <a>Human Practices</a>
+        <div class="dropdown-content">
+          <a  class="nav-link" href="{{ url_for('pages', page='human-practices-overview') }}">Overview</a>
+          <a  class="nav-link" href="{{ url_for('pages', page='engagement') }}">Public Engagement</a>
+        </div>
+      </div>
       <div class="dropdown">
         <a>Engineering</a>
         <div class="dropdown-content">
@@ -23,18 +30,18 @@
           <a  class="nav-link" href="{{ url_for('pages', page='measurement') }}">Measurement</a>
         </div>
       </div>
-      <div class="dropdown">
-        <a>Human Practices</a>
-        <div class="dropdown-content">
-          <a  class="nav-link" href="{{ url_for('pages', page='human-practices-overview') }}">Overview</a>
-          <a  class="nav-link" href="{{ url_for('pages', page='engagement') }}">Public Engagement</a>
-        </div>
-      </div>
             <div class="dropdown">
         <a>Entrepreneurship</a>
         <div class="dropdown-content">
           <a  class="nav-link" href="{{ url_for('pages', page='entrepreneurship') }}">Entrepreneurship</a>
           <a  class="nav-link" href="{{ url_for('pages', page='implementation') }}">Implementation</a>
+        </div>
+      </div>
+       <div class="dropdown">
+        <a>Education</a>
+        <div class="dropdown-content">
+          <a  class="nav-link" href="{{ url_for('pages', page='featured') }}">Featured</a>
+          <a  class="nav-link" href="{{ url_for('pages', page='cookbook') }}">Cookbook</a>
         </div>
       </div>
       <div class="dropdown">
@@ -45,11 +52,5 @@
           <a  class="nav-link" href="{{ url_for('pages', page='sponsors') }}">Sponsors</a>
         </div>
       </div>
-            <div class="dropdown">
-        <a>Education</a>
-        <div class="dropdown-content">
-          <a  class="nav-link" href="{{ url_for('pages', page='featured') }}">Featured</a>
-          <a  class="nav-link" href="{{ url_for('pages', page='cookbook') }}">Cookbook</a>
-        </div>
-      </div>
+
     </div>
